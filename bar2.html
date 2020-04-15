@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+  body{
+    background-color:pink;
+  }
+.outer {
+  display: flex;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.inner {
+  flex: 0 0 10%;
+  top: 100px;
+  height: 130px;
+  margin: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+
+.paddle {
+  position: absolute;
+  top: 120px;
+  bottom: 0;  
+  color:red;
+  width: 50px;
+  height: 20px;
+  border-radius: 20px;
+
+}
+.paddle:hover{
+  background-color:black;
+}
+
+.lefty {
+  left: 0;
+}
+
+.righty {
+  right: 0;
+}
+</style>
+</head>
+<body>
+    
+    
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<div class="outer" id="content">
+  <button class="lefty paddle" id="left-button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+  <div class="inner"><p><h1>new</h1></p></div>
+  <div class="inner" ><p><h1>display</h1></p></div>
+  <div class="inner" ><h1>home</h1></p></div>
+  <div class="inner" ><h1>play</h1></p></div>
+  <div class="inner" ><h1>service</h1></p></div>
+  <div class="inner"><p><h1>zoom</h1></p></div>
+  <div class="inner" ><p><h1>hint</h1></p></div>
+  <div class="inner" ><h1>print</h1></p></div>
+  <div class="inner" ><h1>bookmarks</h1></p></div>
+  <div class="inner" ><h1>zoom in</h1></p></div>
+  <div class="inner"><p><h1>zoom out</h1></p></div>
+  <div class="inner" ><p><h1>new tab</h1></p></div>
+  <div class="inner" ><h1>history</h1></p></div>
+  <div class="inner" ><h1>cast</h1></p></div>
+  <div class="inner" ><h1>find</h1></p></div>
+  <div class="inner"><p><h1>help</h1></p></div>
+  <div class="inner" ><p><h1>settings</h1></p></div>
+  <div class="inner" ><h1>copy</h1></p></div>
+  <div class="inner" ><h1>paste</h1></p></div>
+  <div class="inner" ><h1>cut</h1></p></div>
+  <button class="righty paddle" id="right-button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+
+</div>
+
+<script>
+    
+
+ $('#left-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "-=100px"
+  }, "slow");
+});
+ $('#right-button').click(function() {
+  event.preventDefault();
+  $('#content').animate({
+    scrollLeft: "+=100px"
+  }, "slow");
+});
+  </script>
+
+
+
+</script>
+</body>
+</html>

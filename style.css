@@ -1,0 +1,446 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body {
+      background-image: url("back9.png");
+      background-size: cover;
+      color: gold;
+      font-size: solid bold;
+
+    }
+
+
+    .ex1 {
+      position: absolute;
+      top: 220px;
+      left: 300px;
+      border-radius: 30px;
+    }
+
+    .flip-box {
+      background-color: white;
+      position: absolute;
+      top: 220px;
+      left: 300px;
+
+    }
+
+    .flip-box-inner {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front,
+    .flip-box-back {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .ex2 {
+      position: absolute;
+      top: 90px;
+      left: 600px;
+    }
+
+    .flip-box1 {
+      background-color: white;
+      position: absolute;
+      top: 70px;
+      left: 600px;
+
+    }
+
+    .flip-box-inner1 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box1:hover .flip-box-inner1 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front1,
+    .flip-box-back1 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front1 {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back1 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .ex3 {
+      position: absolute;
+      top: 600px;
+      left: 600px;
+    }
+
+    .flip-box2 {
+      background-color: white;
+      position: absolute;
+      top: 600px;
+      left: 600px;
+
+    }
+
+    .flip-box-inner2 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box2:hover .flip-box-inner2 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front2,
+    .flip-box-back2 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front2 {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back2 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+
+
+    .ex4 {
+      position: absolute;
+      top: 220px;
+      left: 900px;
+    }
+
+    .flip-box3 {
+      background-color: white;
+      position: absolute;
+      top: 220px;
+      left: 900px;
+
+    }
+
+    .flip-box-inner3 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box3:hover .flip-box-inner3 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front3,
+    .flip-box-back3 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front3 {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back3 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+
+    .ex5 {
+      position: absolute;
+      top: 350px;
+      left: 590px;
+
+    }
+
+    .flip-box4 {
+      background-color: white;
+      position: absolute;
+      top: 350px;
+      left: 600px;
+
+    }
+
+    .flip-box-inner4 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box4:hover .flip-box-inner4 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front4,
+    .flip-box-back4 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front4 {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back4 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .ex6 {
+      position: absolute;
+      top: 500px;
+      left: 300px;
+    }
+
+    .flip-box5 {
+      background-color: white;
+      position: absolute;
+      top: 500px;
+      left: 300px;
+
+    }
+
+    .flip-box-inner5 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box5:hover .flip-box-inner5 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front5,
+    .flip-box-back5 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front5 {
+      background-color: white;
+      color: white;
+
+    }
+
+    .flip-box-back5 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .ex7 {
+      position: absolute;
+      top: 500px;
+      left: 900px;
+    }
+
+    .flip-box6 {
+      background-color: white;
+      position: absolute;
+      top: 500px;
+      left: 900px;
+
+    }
+
+    .flip-box-inner6 {
+      position: absolute;
+      text-align: center;
+      transition: transform 2.0s;
+      transform-style: preserve-3d;
+    }
+
+    .flip-box6:hover .flip-box-inner6 {
+      transform: rotateY(180deg);
+    }
+
+    .flip-box-front6,
+    .flip-box-back6 {
+      position: absolute;
+      backface-visibility: hidden;
+
+    }
+
+    .flip-box-front6 {
+      background-color: black;
+      color: white;
+
+    }
+
+    .flip-box-back6 {
+      background-color: transparent;
+      transform: rotateY(180deg);
+      color: white;
+    }
+
+    .mark {
+      direction: right;
+      color: solid black;
+      font-style: italic;
+
+      font-size: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <marquee class="mark"><i class="fa fa-heart-o" aria-hidden="true"></i>"Social-Media ADDICT" <i class="fa fa-heart-o"
+      aria-hidden="true"></i></i></marquee>
+
+
+  <div class="flip-box">
+    <div class="flip-box-inner">
+      <div class="flip-box-front">
+        <img src="whatsapp9.png" width=100px height=100px>
+      </div>
+      <div class="flip-box-back">
+        <p>
+          <h1>whatsapp</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box1">
+    <div class="flip-box-inner1">
+      <div class="flip-box-front1">
+        <img src="sky.png" width=100px height=100px>
+      </div>
+      <div class="flip-box-back1">
+        <p>
+          <h1>skype</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="flip-box2">
+    <div class="flip-box-inner2">
+      <div class="flip-box-front2">
+        <img src="mess.jpg" width=100px height=100px>
+      </div>
+      <div class="flip-box-back2">
+        <p>
+          <h1>hike</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box3">
+    <div class="flip-box-inner3">
+      <div class="flip-box-front3">
+        <img src="12snap.png" width=100px height=100px>
+      </div>
+      <div class="flip-box-back3">
+        <p>
+          <h1>snapchat</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="flip-box4">
+    <div class="flip-box-inner4">
+      <div class="flip-box-front4">
+        <img src="people.png" width=130px height=130px>
+      </div>
+      <div class="flip-box-back4">
+        <p>
+          <h1>soacial media</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="flip-box5">
+    <div class="flip-box-inner5">
+      <div class="flip-box-front5">
+        <img src="download3.png" width=100px height=100px>
+      </div>
+      <div class="flip-box-back5">
+        <p>
+          <h1>facebook</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="flip-box6">
+    <div class="flip-box-inner6">
+      <div class="flip-box-front6">
+        <img src="insta9.png" width=100px height=100px>
+      </div>
+      <div class="flip-box-back6">
+        <p>
+          <h1>insta</h1>
+        </p>
+      </div>
+    </div>
+  </div>
+
+
+  </p>
+
+</body>
+
+</html>
